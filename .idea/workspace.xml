@@ -182,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523296156356</updated>
-      <workItem from="1523296157953" duration="3547000" />
+      <workItem from="1523296157953" duration="3564000" />
     </task>
     <task id="LOCAL-00001" summary="Git ignore .idea">
       <created>1523302061451</created>
@@ -205,11 +205,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523302078419</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Delete file">
+      <created>1523302127480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523302127480</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3547000" />
+    <option name="totallyTimeSpent" value="3564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="102" y="23" width="1336" height="825" extended-state="0" />
@@ -244,7 +251,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Git ignore .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="Git ignore .idea" />
+    <MESSAGE value="Delete file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
