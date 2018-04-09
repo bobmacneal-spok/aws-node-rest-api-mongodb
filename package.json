@@ -13,9 +13,9 @@
     "babel-preset-env": "^1.6.0",
     "serverless-webpack": "^3.1.1",
     "webpack": "^3.3.0",
-    "bluebird": "^3.5.0",
-    "mongoose": "^4.9.6",
-    "validator": "^7.0.0"
+    "bluebird": "^3.5.1",
+    "mongoose": "^5.0.14",
+    "validator": "^9.4.1"
   },
   "author": "Bob MacNeal <bob.macneal@gmail.com>",
   "license": "MIT",

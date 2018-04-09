@@ -12,37 +12,15 @@ const model = mongoose.model('User', {
             },
         },
     },
-    firstname: {
+    email: {
         type: String,
         required: true,
         validate: {
-            validator(firstname) {
-                return validator.isAlphanumeric(firstname);
+            validator(email) {
+                return validator.isEmail(email);
             },
         },
-    },
-    birth: {
-        type: Date,
-        required: true,
-    },
-    city: {
-        type: String,
-        required: true,
-        validate: {
-            validator(city) {
-                return validator.isAlphanumeric(city);
-            },
-        },
-    },
-    ip: {
-        type: String,
-        required: true,
-        validate: {
-            validator(ip) {
-                return validator.isIP(ip);
-            },
-        },
-    },
+    }
 });
 
 module.exports = model;
