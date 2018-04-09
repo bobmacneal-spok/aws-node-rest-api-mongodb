@@ -182,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523296156356</updated>
-      <workItem from="1523296157953" duration="3493000" />
+      <workItem from="1523296157953" duration="3501000" />
     </task>
     <task id="LOCAL-00001" summary="Git ignore .idea">
       <created>1523302061451</created>
@@ -191,11 +191,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523302061451</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Git ignore .idea">
+      <created>1523302068464</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523302068464</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3493000" />
+    <option name="totallyTimeSpent" value="3501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="102" y="23" width="1336" height="825" extended-state="0" />
