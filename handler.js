@@ -69,7 +69,6 @@ module.exports.createUser = (event, context, callback) => {
 
     mongoose.connect(DB_URI, dbOptions).then(
         (db) => {
-            console.log("CONNECTED!");
             user
                 .save()
                 .then(() => {
