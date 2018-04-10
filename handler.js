@@ -5,7 +5,9 @@ const UserModel = require('./model/User.js');
 
 mongoose.Promise = bluebird;
 
-const DB_URI = 'mongodb://lambdauser:SoXFyiJqDpUnjh5G@ds139919.mlab.com:39919/platform';
+// TODO set up a free mLab account to obtain your DB_URI
+// Your DB_URI will look something like mongodb://<dbuser>:<dbpassword>@ds139919.mlab.com:39919/dbname
+const DB_URI = '';
 let dbOptions = {
     bufferMaxEntries: 0,
     bufferCommands: false
@@ -52,15 +54,16 @@ module.exports.createUser = (event, context, callback) => {
     const data = JSON.parse(event.body);
     user = new UserModel(
         {
-            name: data.name,
-            email: data.email
+            firstName: data.firstName,
+            lastName: data.lastName,
+            email: data.email.toLowerCase()
         }
     );
+
     const errs = user.validateSync();
     if (errs) {
         console.log(errs);
         callback(null, createErrorResponse(400, 'Incorrect user data'));
-        // db.close();
         return;
     }
 
@@ -107,7 +110,6 @@ module.exports.deleteUser = (event, context, callback) => {
                 .finally(() => {
                     db.connection.close();
                 });
-
         },
         err => {
             console.log(err);
@@ -127,8 +129,9 @@ module.exports.updateUser = (event, context, callback) => {
     const data = JSON.parse(event.body);
     user = new UserModel({
         _id: id,
-        name: data.name,
-        email: data.email
+        firstName: data.firstName,
+        lastName: data.lastName,
+        email: data.email.toLowerCase()
     });
 
     const errs = user.validateSync();

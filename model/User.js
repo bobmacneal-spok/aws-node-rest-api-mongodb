@@ -3,12 +3,21 @@ const validator = require('validator');
 
 
 const model = mongoose.model('User', {
-    name: {
+    firstName: {
         type: String,
         required: true,
         validate: {
             validator(name) {
-                return validator.isAlphanumeric(name);
+                return validator.isAlpha(name);
+            },
+        },
+    },
+    lastName: {
+        type: String,
+        required: true,
+        validate: {
+            validator(name) {
+                return validator.isAlpha(name);
             },
         },
     },
