@@ -1,5 +1,5 @@
 # aws-node-rest-api-mongodb
-This example uses an AWS Lambda using NodeJs. The Lambda exposes four
+This example is an AWS Lambda using NodeJs. The Lambda exposes four
 REST endpoints meant to create, fetch, update or delete a User resource.
 
 The endpoints connect to an instance of mongoDB hosted on [mLab](https://mlab.com/).
